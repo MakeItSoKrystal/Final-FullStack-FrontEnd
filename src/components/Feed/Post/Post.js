@@ -7,14 +7,14 @@ const post = props => (
   <article className="post">
     <header className="post__header">
       <h3 className="post__meta">
-        Posted by {props.author} on {props.date}
+        {/* Posted by {props.author} on {props.date} */}
+        Client added on {props.date}
       </h3>
       <h1 className="post__title">{props.title}</h1>
     </header>
-    {/* <div className="post__image">
-      <Image imageUrl={props.image} contain />
-    </div>
-    <div className="post__content">{props.content}</div> */}
+    <div className="post__content">Details: {props.content}</div>
+    <div className="post__content">Phone: {props.phone}</div>
+    <div className="post__content">Interest Level: {props.insterestLevel}</div>
     <div className="post__actions">
       <Button mode="flat" link={props.id}>
         View

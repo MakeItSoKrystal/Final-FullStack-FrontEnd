@@ -104,8 +104,6 @@ class Feed extends Component {
     this.setState({
       editLoading: true,
     });
-    // Set up data (with image!)
-    // let url = "URL";
     let url = "http://localhost:8080/feed/post";
     let method = "POST";
     if (this.state.editPost) {
@@ -120,6 +118,8 @@ class Feed extends Component {
       body: JSON.stringify({
         title: postData.title,
         content: postData.content,
+        phone: postData.phone,
+        insterestLevel: postData.insterestLevel,
       }),
     })
       .then((res) => {
@@ -134,6 +134,8 @@ class Feed extends Component {
           _id: resData.post._id,
           title: resData.post.title,
           content: resData.post.content,
+          phone: resData.post.phone,
+          insterestLevel: resData.post.insterestLevel,
           creator: resData.post.creator,
           createdAt: resData.post.createdAt,
         };
@@ -215,7 +217,7 @@ class Feed extends Component {
           <form onSubmit={this.statusUpdateHandler}>
             <Input
               type="text"
-              placeholder="Your status"
+              placeholder="'You Miss 100% of the shots you don't take.' - Wayne Gretzky"
               control="input"
               onChange={this.statusInputChangeHandler}
               value={this.state.status}
@@ -227,7 +229,7 @@ class Feed extends Component {
         </section>
         <section className="feed__control">
           <Button mode="raised" design="accent" onClick={this.newPostHandler}>
-            New Post
+            New Client
           </Button>
         </section>
         <section className="feed">
@@ -253,8 +255,9 @@ class Feed extends Component {
                   author={post.creator.name}
                   date={new Date(post.createdAt).toLocaleDateString("en-US")}
                   title={post.title}
-                  image={post.imageUrl}
                   content={post.content}
+                  phone={post.phone}
+                  insterestLevel={post.insterestLevel}
                   onStartEdit={this.startEditPostHandler.bind(this, post._id)}
                   onDelete={this.deletePostHandler.bind(this, post._id)}
                 />
