@@ -4,6 +4,7 @@
 }
 
 .input label {
+  color: slategray;
   display: block;
   text-transform: uppercase;
   margin-bottom: 0.25rem;

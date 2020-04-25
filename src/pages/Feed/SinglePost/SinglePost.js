@@ -11,7 +11,7 @@ class SinglePost extends Component {
     interestLevel: '',
   };
 
-  // look this up
+  // look into this later for edit and view
   componentDidMount() {
     const postId = this.props.match.params.postId;
     fetch('URL')
@@ -90,7 +90,7 @@ class SinglePost extends Component {
       <section className="single-post">
         <h1>{this.state.title}</h1>
         <h2>
-          Created by {this.state.author} on {this.state.date}
+          Created by on {this.state.date}
         </h2>
         <p>Content: {this.state.content}</p>
         <p>Phone: {this.state.phone}</p>
