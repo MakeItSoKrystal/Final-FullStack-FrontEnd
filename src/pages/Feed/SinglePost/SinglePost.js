@@ -6,35 +6,36 @@ class SinglePost extends Component {
   state = {
     title: '',
     author: '',
+    date: '',
     content: '',
     phone: '',
     interestLevel: '',
   };
 
   // look into this later for edit and view
-  componentDidMount() {
-    const postId = this.props.match.params.postId;
-    fetch('URL')
-      .then(res => {
-        if (res.status !== 200) {
-          throw new Error('Failed to fetch status');
-        }
-        return res.json();
-      })
-      .then(resData => {
-        this.setState({
-          title: resData.post.title,
-          author: resData.post.creator.name,
-          date: new Date(resData.post.createdAt).toLocaleDateString('en-US'),
-          content: resData.post.content,
-          phone: resData.post.phone,
-          interestLevel: resData.post.interestLevel,
-        });
-      })
-      .catch(err => {
-        console.log(err);
-      });
-  }
+  // componentDidMount() {
+  //   // const postId = this.props.match.params.postId; // only returns post id
+  //   fetch('URL')
+  //     .then(res => {
+  //       if (res.status !== 200) {
+  //         throw new Error('Failed to fetch status');
+  //       }
+  //       return res.json();
+  //     })
+  //     .then(resData => {
+  //       this.setState({
+  //         title: resData.post.title,
+  //         author: resData.post.creator.name,
+  //         date: new Date(resData.post.createdAt).toLocaleDateString('en-US'),
+  //         content: resData.post.content,
+  //         phone: resData.post.phone,
+  //         interestLevel: resData.post.interestLevel,
+  //       });
+  //     })
+  //     .catch(err => {
+  //       console.log(err);
+  //     });
+  // }
 
   // componentDidMount() {
   //   const postId = this.props.match.params.postId;
@@ -90,7 +91,7 @@ class SinglePost extends Component {
       <section className="single-post">
         <h1>{this.state.title}</h1>
         <h2>
-          Created by on {this.state.date}
+          Created on {this.state.date}
         </h2>
         <p>Content: {this.state.content}</p>
         <p>Phone: {this.state.phone}</p>

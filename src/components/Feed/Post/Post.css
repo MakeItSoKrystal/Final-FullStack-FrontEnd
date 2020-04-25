@@ -1,13 +1,13 @@
 .post {
   margin: 1rem 0;
-  border: 1px solid #3b0062;
+  border: 1px solid lightgray;
   border-radius: 5px;
   padding: 0.5rem;
 }
 
 .post__meta {
   font-size: 1rem;
-  color: #707070;
+  color: #a1a1a1;
   margin: 0;
 }
 
