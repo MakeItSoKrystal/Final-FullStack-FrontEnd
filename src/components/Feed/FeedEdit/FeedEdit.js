@@ -168,7 +168,7 @@ class FeedEdit extends Component {
             />
             <Input
               id="content"
-              label="Content"
+              label="Details"
               control="textarea"
               rows="5"
               onChange={this.postInputChangeHandler}
