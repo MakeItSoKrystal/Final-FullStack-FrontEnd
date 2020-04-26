@@ -3,7 +3,6 @@ import React, { Component, Fragment } from "react";
 import Post from "../../components/Feed/Post/Post";
 import Button from "../../components/Button/Button";
 import FeedEdit from "../../components/Feed/FeedEdit/FeedEdit";
-import Input from "../../components/Form/Input/Input";
 import Paginator from "../../components/Paginator/Paginator";
 import Loader from "../../components/Loader/Loader";
 import ErrorHandler from "../../components/ErrorHandler/ErrorHandler";
@@ -15,24 +14,23 @@ class Feed extends Component {
     posts: [],
     totalPosts: 0,
     editPost: null,
-    status: "",
     postPage: 1,
     postsLoading: true,
     editLoading: false,
   };
 
   componentDidMount() {
-    fetch("URL")
-      .then((res) => {
-        if (res.status !== 200) {
-          throw new Error("Failed to fetch user status.");
-        }
-        return res.json();
-      })
-      .then((resData) => {
-        this.setState({ status: resData.status });
-      })
-      .catch(this.catchError);
+    fetch("URL");
+    // .then((res) => {
+    //   if (res.status !== 200) {
+    //     throw new Error("Failed to fetch user status.");
+    //   }
+    //   return res.json();
+    // })
+    // .then((resData) => {
+    //   this.setState({ status: resData.status });
+    // })
+    // .catch(this.catchError);
 
     this.loadPosts();
   }
@@ -50,7 +48,6 @@ class Feed extends Component {
       page--;
       this.setState({ postPage: page });
     }
-    // fetch('URL')
     fetch("http://localhost:8080/feed/posts?page=" + page)
       .then((res) => {
         if (res.status !== 200) {
@@ -65,19 +62,6 @@ class Feed extends Component {
           postsLoading: false,
         });
       })
-      .catch(this.catchError);
-  };
-
-  statusUpdateHandler = (event) => {
-    event.preventDefault();
-    fetch("http://localhost:8080/graphql")
-      .then((res) => {
-        if (res.status !== 200 && res.status !== 201) {
-          throw new Error("Can't update status!");
-        }
-        return res.json();
-      })
-      .then((resData) => {})
       .catch(this.catchError);
   };
 
@@ -168,10 +152,6 @@ class Feed extends Component {
       });
   };
 
-  statusInputChangeHandler = (input, value) => {
-    this.setState({ status: value });
-  };
-
   deletePostHandler = (postId) => {
     this.setState({ postsLoading: true });
     fetch("http://localhost:8080/graphql")
@@ -213,21 +193,8 @@ class Feed extends Component {
           onCancelEdit={this.cancelEditHandler}
           onFinishEdit={this.finishEditHandler}
         />
-        <section className="feed__status">
-          <form onSubmit={this.statusUpdateHandler}>
-            <Input
-              type="text"
-              placeholder="'You Miss 100% of the shots you don't take.' - Wayne Gretzky"
-              control="input"
-              onChange={this.statusInputChangeHandler}
-              value={this.state.status}
-            />
-            <Button mode="flat" type="submit">
-              Update
-            </Button>
-          </form>
-        </section>
         <section className="feed__control">
+          <h2>New Client</h2>
           <Button mode="raised" design="accent" onClick={this.newPostHandler}>
             New Client
           </Button>

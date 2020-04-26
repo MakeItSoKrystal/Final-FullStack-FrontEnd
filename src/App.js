@@ -9,6 +9,9 @@ import MobileNavigation from "./components/Navigation/MobileNavigation/MobileNav
 import ErrorHandler from "./components/ErrorHandler/ErrorHandler";
 import FeedPage from "./pages/Feed/Feed";
 import SinglePostPage from "./pages/Feed/SinglePost/SinglePost";
+import SingleClientPage from "./pages/Feed/SingleClient/SingleClient";
+import Pipeline from "./pages/Feed/Pipeline/Pipeline";
+import PhoneBook from "./pages/Feed/PhoneBook/PhoneBook";
 // import LoginPage from './pages/Auth/Login';
 // import SignupPage from './pages/Auth/Signup';
 import "./App.css";
@@ -175,9 +178,23 @@ class App extends Component {
             )}
           />
           <Route
-            path="/:postId"
+            path="/pipeline"
             render={(props) => (
-              <SinglePostPage
+              <Pipeline
+                {...props}
+                userId={this.state.userId}
+                token={this.state.token}
+              />
+            )}
+          />
+          <Route
+            path="/phone-book"
+            render={(props) => <PhoneBook {...props} />}
+          />
+          <Route
+            path="/:clientID"
+            render={(props) => (
+              <SingleClientPage
                 {...props}
                 userId={this.state.userId}
                 token={this.state.token}

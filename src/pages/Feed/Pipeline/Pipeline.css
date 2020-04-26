@@ -1,0 +1,24 @@
+.single-client {
+  width: 90%;
+  margin: auto;
+  color: slategray;
+}
+
+.single-client h2 {
+  font-size: 1rem;
+  color: #00929b;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid #464646;
+}
+
+.single-client__image {
+  height: 20rem;
+  width: 20rem;
+  margin: 1rem auto;
+}
+
+@media (min-width: 768px) {
+  .single-client {
+    width: 40rem;
+  }
+}
