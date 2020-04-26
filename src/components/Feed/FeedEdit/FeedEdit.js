@@ -1,44 +1,43 @@
-import React, { Component, Fragment } from 'react';
+import React, { Component, Fragment } from "react";
 
-import Backdrop from '../../Backdrop/Backdrop';
-import Modal from '../../Modal/Modal';
-import Input from '../../Form/Input/Input';
-import { required, length } from '../../../util/validators';
-import { generateBase64FromImage } from '../../../util/image';
+import Backdrop from "../../Backdrop/Backdrop";
+import Modal from "../../Modal/Modal";
+import Input from "../../Form/Input/Input";
+import { required, length } from "../../../util/validators";
+import { generateBase64FromImage } from "../../../util/image";
 
 const POST_FORM = {
   title: {
-    value: '',
+    value: "",
     valid: false,
     touched: false,
-    validators: [required, length({ min: 5 })]
+    validators: [required, length({ min: 5 })],
   },
   content: {
-    value: '',
+    value: "",
     valid: false,
     touched: false,
-    validators: [required, length({ min: 5 })]
+    validators: [required, length({ min: 5 })],
   },
   phone: {
-    value: '',
+    value: "",
     valid: false,
     touched: false,
-    validators: [required, length({ min: 10 })]
+    validators: [required, length({ min: 10 })],
   },
   insterestLevel: {
-    value: '',
+    value: "",
     valid: false,
     touched: false,
-    validators: [required, length({ min: 1 })]
+    validators: [required, length({ min: 1 })],
   },
-
 };
 
 class FeedEdit extends Component {
   state = {
     postForm: POST_FORM,
     formIsValid: false,
-    imagePreview: null
+    imagePreview: null,
   };
 
   componentDidUpdate(prevProps, prevState) {
@@ -51,22 +50,22 @@ class FeedEdit extends Component {
         title: {
           ...prevState.postForm.title,
           value: this.props.selectedPost.title,
-          valid: true
+          valid: true,
         },
         content: {
           ...prevState.postForm.content,
           value: this.props.selectedPost.content,
-          valid: true
+          valid: true,
         },
         phone: {
           ...prevState.postForm.phone,
           value: this.props.selectedPost.phone,
-          valid: true
+          valid: true,
         },
         insterestLevel: {
           ...prevState.postForm.insterestLevel,
           value: this.props.selectedPost.insterestLevel,
-          valid: true
+          valid: true,
         },
       };
       this.setState({ postForm: postForm, formIsValid: true });
@@ -76,14 +75,14 @@ class FeedEdit extends Component {
   postInputChangeHandler = (input, value, files) => {
     if (files) {
       generateBase64FromImage(files[0])
-        .then(b64 => {
+        .then((b64) => {
           this.setState({ imagePreview: b64 });
         })
-        .catch(e => {
+        .catch((e) => {
           this.setState({ imagePreview: null });
         });
     }
-    this.setState(prevState => {
+    this.setState((prevState) => {
       let isValid = true;
       for (const validator of prevState.postForm[input].validators) {
         isValid = isValid && validator(value);
@@ -93,8 +92,8 @@ class FeedEdit extends Component {
         [input]: {
           ...prevState.postForm[input],
           valid: isValid,
-          value: files ? files[0] : value
-        }
+          value: files ? files[0] : value,
+        },
       };
       let formIsValid = true;
       for (const inputName in updatedForm) {
@@ -102,21 +101,21 @@ class FeedEdit extends Component {
       }
       return {
         postForm: updatedForm,
-        formIsValid: formIsValid
+        formIsValid: formIsValid,
       };
     });
   };
 
-  inputBlurHandler = input => {
-    this.setState(prevState => {
+  inputBlurHandler = (input) => {
+    this.setState((prevState) => {
       return {
         postForm: {
           ...prevState.postForm,
           [input]: {
             ...prevState.postForm[input],
-            touched: true
-          }
-        }
+            touched: true,
+          },
+        },
       };
     });
   };
@@ -124,7 +123,7 @@ class FeedEdit extends Component {
   cancelPostChangeHandler = () => {
     this.setState({
       postForm: POST_FORM,
-      formIsValid: false
+      formIsValid: false,
     });
     this.props.onCancelEdit();
   };
@@ -134,13 +133,13 @@ class FeedEdit extends Component {
       title: this.state.postForm.title.value,
       content: this.state.postForm.content.value,
       phone: this.state.postForm.phone.value,
-      insterestLevel: this.state.postForm.insterestLevel.value
+      insterestLevel: this.state.postForm.insterestLevel.value,
     };
     this.props.onFinishEdit(post);
     this.setState({
       postForm: POST_FORM,
       formIsValid: false,
-      imagePreview: null
+      imagePreview: null,
     });
   };
 
@@ -161,10 +160,10 @@ class FeedEdit extends Component {
               label="Title"
               control="input"
               onChange={this.postInputChangeHandler}
-              onBlur={this.inputBlurHandler.bind(this, 'title')}
-              valid={this.state.postForm['title'].valid}
-              touched={this.state.postForm['title'].touched}
-              value={this.state.postForm['title'].value}
+              onBlur={this.inputBlurHandler.bind(this, "title")}
+              valid={this.state.postForm["title"].valid}
+              touched={this.state.postForm["title"].touched}
+              value={this.state.postForm["title"].value}
             />
             <Input
               id="content"
@@ -172,10 +171,10 @@ class FeedEdit extends Component {
               control="textarea"
               rows="5"
               onChange={this.postInputChangeHandler}
-              onBlur={this.inputBlurHandler.bind(this, 'content')}
-              valid={this.state.postForm['content'].valid}
-              touched={this.state.postForm['content'].touched}
-              value={this.state.postForm['content'].value}
+              onBlur={this.inputBlurHandler.bind(this, "content")}
+              valid={this.state.postForm["content"].valid}
+              touched={this.state.postForm["content"].touched}
+              value={this.state.postForm["content"].value}
             />
             <Input
               id="phone"
@@ -183,10 +182,10 @@ class FeedEdit extends Component {
               control="textarea"
               rows="1"
               onChange={this.postInputChangeHandler}
-              onBlur={this.inputBlurHandler.bind(this, 'phone')}
-              valid={this.state.postForm['phone'].valid}
-              touched={this.state.postForm['phone'].touched}
-              value={this.state.postForm['phone'].value}
+              onBlur={this.inputBlurHandler.bind(this, "phone")}
+              valid={this.state.postForm["phone"].valid}
+              touched={this.state.postForm["phone"].touched}
+              value={this.state.postForm["phone"].value}
             />
             <Input
               id="insterestLevel"
@@ -194,10 +193,10 @@ class FeedEdit extends Component {
               control="textarea"
               rows="1"
               onChange={this.postInputChangeHandler}
-              onBlur={this.inputBlurHandler.bind(this, 'insterestLevel')}
-              valid={this.state.postForm['insterestLevel'].valid}
-              touched={this.state.postForm['insterestLevel'].touched}
-              value={this.state.postForm['insterestLevel'].value}
+              onBlur={this.inputBlurHandler.bind(this, "insterestLevel")}
+              valid={this.state.postForm["insterestLevel"].valid}
+              touched={this.state.postForm["insterestLevel"].touched}
+              value={this.state.postForm["insterestLevel"].value}
             />
           </form>
         </Modal>

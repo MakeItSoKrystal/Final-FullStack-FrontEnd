@@ -51,7 +51,7 @@ class Feed extends Component {
       this.setState({ postPage: page });
     }
     // fetch('URL')
-    fetch("http://localhost:8080/feed/posts")
+    fetch("http://localhost:8080/feed/posts?page=" + page)
       .then((res) => {
         if (res.status !== 200) {
           throw new Error("Failed to fetch posts.");
@@ -70,7 +70,7 @@ class Feed extends Component {
 
   statusUpdateHandler = (event) => {
     event.preventDefault();
-    fetch("URL")
+    fetch("http://localhost:8080/graphql")
       .then((res) => {
         if (res.status !== 200 && res.status !== 201) {
           throw new Error("Can't update status!");
@@ -107,7 +107,7 @@ class Feed extends Component {
     let url = "http://localhost:8080/feed/post";
     let method = "POST";
     if (this.state.editPost) {
-      url = "URL";
+      url = "http://localhost:8080/graphql";
     }
 
     fetch(url, {
@@ -174,7 +174,7 @@ class Feed extends Component {
 
   deletePostHandler = (postId) => {
     this.setState({ postsLoading: true });
-    fetch("URL")
+    fetch("http://localhost:8080/graphql")
       .then((res) => {
         if (res.status !== 200 && res.status !== 201) {
           throw new Error("Deleting a post failed!");
