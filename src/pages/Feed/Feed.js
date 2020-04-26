@@ -194,7 +194,6 @@ class Feed extends Component {
           onFinishEdit={this.finishEditHandler}
         />
         <section className="feed__control">
-          <h2>New Client</h2>
           <Button mode="raised" design="accent" onClick={this.newPostHandler}>
             New Client
           </Button>

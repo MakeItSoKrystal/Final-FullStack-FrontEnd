@@ -1,7 +1,18 @@
-# Final-FullStack-FrontEnd
+# Client Clout FrontEnd
 
-React frontend set up with hooks for API
+## To instal and serve front-end
 
-`npm install`
+```
+npm install
+```
 
-`npm start`
+```
+npm start
+```
+
+## Client Clout has two dependancies
+
+- RESTful node server with prisma and mongose
+
+- GraphQL node server
+
