@@ -41,7 +41,7 @@ npm start
 
 ### Seed script populates datastore properly
 
-- [Follow instructions on GraphQL API <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvM8_0u5jqs7UY57Q-QgKtr6DCwIpXBLg1OvH2TFdghpyYqhdH&s" width="15" alt="GraphQL Icon">and it will seed 25 clients into the <img src="https://cdn3.iconfinder.com/data/icons/social-media-2169" width="15" alt="Docker Icon">Docker container. You will see mutations GraphQL Playground and 25 clients added successfully in the <img src="https://seeklogo.com/images/P/prisma-logo-3805665B69-seeklogo.com.png" width="15" alt="Prisma Icon">Prisma Studio](https://github.com/krymarie/GraphQL-API-Node-Server)
+- [Follow instructions on GraphQL API <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvM8_0u5jqs7UY57Q-QgKtr6DCwIpXBLg1OvH2TFdghpyYqhdH&s" width="15" alt="GraphQL Icon">and it will seed 25 clients into the <img src="https://cdn3.iconfinder.com/data/icons/social-media-2169/24/social_media_social_media_logo_docker-512.png" width="15" alt="Docker Icon">Docker container. You will see mutations GraphQL Playground and 25 clients added successfully in the <img src="https://seeklogo.com/images/P/prisma-logo-3805665B69-seeklogo.com.png" width="15" alt="Prisma Icon">Prisma Studio](https://github.com/krymarie/GraphQL-API-Node-Server)
 
 ### RESTful server properly CREATES, READS, UPDATES, and DELETES
 
