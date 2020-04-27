@@ -1,8 +1,8 @@
-# Client CLOUT React Front-end
+<img src="https://raw.githubusercontent.com/krymarie/Final-FullStack-FrontEnd/master/src/components/Logo/cloutLogo.png" width="300" alt="Clout Icon">
 
 ## Client Integration Solutions
 
-### Client CLOUT has two dependancies
+### React Front-end has two dependancies
 
 - [RESTful API server with datastore, and mongose](https://github.com/krymarie/Final-FullStack-API)
 
@@ -28,7 +28,7 @@ npm start
 
 ### Front-end developed and function
 
-<img src="https://rawgit.com/gorangajic/react-icons/master/react-icons.svg" width="50" alt="React Icons">
+<img src="https://rawgit.com/gorangajic/react-icons/master/react-icons.svg" width="50" alt="React Icon">
 
 - Front end was developed using react and is responsive and has multiple nave items that populate data conditionally. run `npm install` and `npm start` after deploying other dependancies above.
 
