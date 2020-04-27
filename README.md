@@ -37,7 +37,7 @@ npm start
 
 ### Properly used Git with 4 days of commits per week
 
-- [33 days of commits between Februaru 19th thru April 27th](https://github.com/krymarie)
+- [33 days of commits between February 19th thru April 27th](https://github.com/krymarie)
 
 ### Seed script populates datastore properly
 
@@ -45,21 +45,21 @@ npm start
 
 ### RESTful server properly CREATES, READS, UPDATES, and DELETES
 
-- [Creates](https://github.com/krymarie/Final-FullStack-API/blob/master/controllers/feed.js#L19)
+- [CREATES](https://github.com/krymarie/Final-FullStack-API/blob/master/controllers/feed.js#L19)
 - [READS](https://github.com/krymarie/Final-FullStack-API/blob/master/controllers/feed.js#L1)
 - [UPDATES]()
 - [DELETES]()
 
 ### GraphQL server properly CREATES, READS, UPDATES, and DELETES
 
-- [Creates]()
+- [CREATES]()
 - [READS]()
 - [UPDATES]()
 - [DELETES]()
 
 ### App properly connects client and server using HTTP/HTTPS
 
-- [Front-end connection vie HTTP/HTTPS]()
+- [Front-end connected via HTTP/HTTPS]()
 
 ### Detailed ReadMe provided which explains install and run instructions.
 
@@ -69,33 +69,7 @@ npm start
 
 - All three branches are documented and will deploy without any errors
   [RESTful API README](https://github.com/krymarie/Final-FullStack-API/blob/master/README.md)
+
   [GraphQL API README](https://github.com/krymarie/GraphQL-API-Node-Server/blob/master/README.md)
+
   [Front-end README](https://github.com/krymarie/Final-FullStack-FrontEnd/blob/master/README.md)
-
--
-
-### Conditional logic and array methods rener large lists
-
--
-
-### Conditional logic and array methods rener large lists
-
--
-
-### Conditional logic and array methods rener large lists
-
--
-
-### Conditional logic and array methods rener large lists
-
--
-
-### Conditional logic and array methods rener large lists
-
--
-
-### Conditional logic and array methods rener large lists
-
--
-
-### Conditional logic and array methods rener large lists
