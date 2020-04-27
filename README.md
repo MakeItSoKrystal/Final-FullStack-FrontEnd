@@ -1,4 +1,5 @@
 <img src="https://raw.githubusercontent.com/krymarie/Final-FullStack-FrontEnd/master/src/components/Logo/cloutLogo.png" width="280" alt="Clout Icon">
+
 ## Client Integration Solutions
 
 ### React Front-end has two dependancies
@@ -7,7 +8,7 @@
 
 - [GraphQL API server with Prisma and Docker](https://github.com/krymarie/GraphQL-API-Node-Server)
 
-### To install and serve front-end
+### To install and serve front-end:
 
 ```
 npm install
