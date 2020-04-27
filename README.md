@@ -41,7 +41,7 @@ npm start
 
 ### Seed script populates datastore properly
 
-- [Follow instructions on GraphQL API <img src="https://rawgit.com/gorangajic/react-icons/master/react-icons.svg" width="15" alt="React Icon">and you will see 25 clients added to the DB successfully](https://github.com/krymarie/GraphQL-API-Node-Server)
+- [Follow instructions on GraphQL API <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvM8_0u5jqs7UY57Q-QgKtr6DCwIpXBLg1OvH2TFdghpyYqhdH&s" width="15" alt="React Icon">and you will see 25 clients added to the DB successfully](https://github.com/krymarie/GraphQL-API-Node-Server)
 
 ### RESTful server properly CREATES, READS, UPDATES, and DELETES
 
