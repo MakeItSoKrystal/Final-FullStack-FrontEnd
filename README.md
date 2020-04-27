@@ -26,7 +26,7 @@ npm start
 
 ### Front-end developed and function
 
-- Front end was developed using <img src="https://rawgit.com/gorangajic/react-icons/master/react-icons.svg" width="15" alt="React Icon"> react, it responsive and has multiple nave items that populate data conditionally. Run `npm install` and `npm start` after deploying other dependancies to see functionality.
+- Front-end was developed using <img src="https://rawgit.com/gorangajic/react-icons/master/react-icons.svg" width="15" alt="React Icon"> react, it responsive and has multiple nave items that populate data conditionally. Run `npm install` and `npm start` after deploying other dependencies to see functionality.
 
 ### NPM scripts and Node used to create and manage back-end
 
