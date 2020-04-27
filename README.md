@@ -28,9 +28,7 @@ npm start
 
 ### Front-end developed and function
 
-<img src="https://rawgit.com/gorangajic/react-icons/master/react-icons.svg" width="40" alt="React Icon">
-
-- Front end was developed using <img src="https://rawgit.com/gorangajic/react-icons/master/react-icons.svg" width="40" alt="React Icon"> react and is responsive and has multiple nave items that populate data conditionally. run `npm install` and `npm start` after deploying other dependancies above.
+- Front end was developed using <img src="https://rawgit.com/gorangajic/react-icons/master/react-icons.svg" width="15" alt="React Icon"> react and is responsive and has multiple nave items that populate data conditionally. run `npm install` and `npm start` after deploying other dependancies above.
 
 ### NPM scripts and Node used to create and manage back-end
 
@@ -43,7 +41,7 @@ npm start
 
 ### Seed script populates datastore properly
 
-- [Follow instructions on GraphQL API and you will see 25 clients added to the DB successfully](https://github.com/krymarie/GraphQL-API-Node-Server)
+- [Follow instructions on GraphQL API <img src="https://rawgit.com/gorangajic/react-icons/master/react-icons.svg" width="15" alt="React Icon">and you will see 25 clients added to the DB successfully](https://github.com/krymarie/GraphQL-API-Node-Server)
 
 ### RESTful server properly CREATES, READS, UPDATES, and DELETES
 
