@@ -1,4 +1,4 @@
-<img src="https://raw.githubusercontent.com/krymarie/Final-FullStack-FrontEnd/master/src/components/Logo/cloutLogo.png" width="300" alt="Clout Icon">
+<img src="https://raw.githubusercontent.com/krymarie/Final-FullStack-FrontEnd/master/src/components/Logo/cloutLogo.png" width="280" alt="Clout Icon">
 
 ## Client Integration Solutions
 
