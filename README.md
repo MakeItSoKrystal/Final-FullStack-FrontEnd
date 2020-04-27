@@ -1,12 +1,11 @@
 <img src="https://raw.githubusercontent.com/krymarie/Final-FullStack-FrontEnd/master/src/components/Logo/cloutLogo.png" width="280" alt="Clout Icon">
-
 ## Client Integration Solutions
 
 ### React Front-end has two dependancies
 
-- [RESTful API server with datastore, and mongose](https://github.com/krymarie/Final-FullStack-API)
+- [RESTful API server with datastore](https://github.com/krymarie/Final-FullStack-API)
 
-- [GraphQL API server with prisma and Docker](https://github.com/krymarie/GraphQL-API-Node-Server)
+- [GraphQL API server with Prisma and Docker](https://github.com/krymarie/GraphQL-API-Node-Server)
 
 ### To install and serve front-end
 
@@ -24,11 +23,10 @@ npm start
 
 - [AllClients mapped into individual clients for seeding](https://github.com/krymarie/GraphQL-API-Node-Server/blob/master/prisma/seed.js#L11)
 - [For loop of allClients seeds each client into the DB](https://github.com/krymarie/GraphQL-API-Node-Server/blob/master/prisma/seed.js#L26)
-  )
 
 ### Front-end developed and function
 
-- Front end was developed using <img src="https://rawgit.com/gorangajic/react-icons/master/react-icons.svg" width="15" alt="React Icon"> react and is responsive and has multiple nave items that populate data conditionally. run `npm install` and `npm start` after deploying other dependancies above.
+- Front end was developed using <img src="https://rawgit.com/gorangajic/react-icons/master/react-icons.svg" width="15" alt="React Icon"> react, it responsive and has multiple nave items that populate data conditionally. Run `npm install` and `npm start` after deploying other dependancies to see functionality.
 
 ### NPM scripts and Node used to create and manage back-end
 
@@ -45,17 +43,17 @@ npm start
 
 ### RESTful server properly CREATES, READS, UPDATES, and DELETES
 
-- [CREATES](https://github.com/krymarie/Final-FullStack-API/blob/master/controllers/feed.js#L19)
-- [READS](https://github.com/krymarie/Final-FullStack-API/blob/master/controllers/feed.js#L1)
-- [UPDATES](https://github.com/krymarie/Final-FullStack-API/blob/master/controllers/feed.js#L39)
-- [DELETES](https://github.com/krymarie/Final-FullStack-API/blob/master/controllers/feed.js#L81)
+- [CREATE](https://github.com/krymarie/Final-FullStack-API/blob/master/controllers/feed.js#L19)
+- [READ](https://github.com/krymarie/Final-FullStack-API/blob/master/controllers/feed.js#L1)
+- [UPDATE](https://github.com/krymarie/Final-FullStack-API/blob/master/controllers/feed.js#L39)
+- [DELETE](https://github.com/krymarie/Final-FullStack-API/blob/master/controllers/feed.js#L81)
 
 ### GraphQL server properly CREATES, READS, UPDATES, and DELETES
 
-- [CREATES](https://github.com/krymarie/GraphQL-API-Node-Server/blob/master/controllers/feed.js#L34)
-- [READS](https://github.com/krymarie/GraphQL-API-Node-Server/blob/master/controllers/feed.js#L10)
-- [UPDATES](https://github.com/krymarie/GraphQL-API-Node-Server/blob/master/controllers/feed.js#L95)
-- [DELETES](https://github.com/krymarie/GraphQL-API-Node-Server/blob/master/controllers/feed.js#L143)
+- [CREATE](https://github.com/krymarie/GraphQL-API-Node-Server/blob/master/controllers/feed.js#L34)
+- [READ](https://github.com/krymarie/GraphQL-API-Node-Server/blob/master/controllers/feed.js#L10)
+- [UPDATE](https://github.com/krymarie/GraphQL-API-Node-Server/blob/master/controllers/feed.js#L95)
+- [DELETE](https://github.com/krymarie/GraphQL-API-Node-Server/blob/master/controllers/feed.js#L143)
 
 ### App properly connects client and server using HTTP/HTTPS
 
