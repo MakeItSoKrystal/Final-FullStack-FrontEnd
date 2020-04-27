@@ -41,25 +41,25 @@ npm start
 
 ### Seed script populates datastore properly
 
-- [Follow instructions on <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvM8_0u5jqs7UY57Q-QgKtr6DCwIpXBLg1OvH2TFdghpyYqhdH&s" width="15" alt="GraphQL Icon"> GraphQL API and it will seed 25 clients into the <img src="https://cdn3.iconfinder.com/data/icons/social-media-2169/24/social_media_social_media_logo_docker-512.png" width="20" alt="Docker Icon"> Docker container. You will see mutations GraphQL Playground and 25 clients added successfully in the <img src="https://seeklogo.com/images/P/prisma-logo-3805665B69-seeklogo.com.png" width="10" alt="Prisma Icon"> Prisma Studio](https://github.com/krymarie/GraphQL-API-Node-Server)
+- [Follow instructions on <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvM8_0u5jqs7UY57Q-QgKtr6DCwIpXBLg1OvH2TFdghpyYqhdH&s" width="15" alt="GraphQL Icon"> GraphQL API and it will seed 25 clients into the <img src="https://cdn3.iconfinder.com/data/icons/social-media-2169/24/social_media_social_media_logo_docker-512.png" width="20" alt="Docker Icon"> Docker container. You will see mutations and CRUD operation in the GraphQL Playground, and you will see all 25 clients successfully added in the <img src="https://seeklogo.com/images/P/prisma-logo-3805665B69-seeklogo.com.png" width="10" alt="Prisma Icon"> Prisma Studio](https://github.com/krymarie/GraphQL-API-Node-Server)
 
 ### RESTful server properly CREATES, READS, UPDATES, and DELETES
 
 - [CREATES](https://github.com/krymarie/Final-FullStack-API/blob/master/controllers/feed.js#L19)
 - [READS](https://github.com/krymarie/Final-FullStack-API/blob/master/controllers/feed.js#L1)
-- [UPDATES]()
-- [DELETES]()
+- [UPDATES](https://github.com/krymarie/Final-FullStack-API/blob/master/controllers/feed.js#L39)
+- [DELETES](https://github.com/krymarie/Final-FullStack-API/blob/master/controllers/feed.js#L81)
 
 ### GraphQL server properly CREATES, READS, UPDATES, and DELETES
 
-- [CREATES]()
-- [READS]()
-- [UPDATES]()
-- [DELETES]()
+- [CREATES](https://github.com/krymarie/GraphQL-API-Node-Server/blob/master/controllers/feed.js#L34)
+- [READS](https://github.com/krymarie/GraphQL-API-Node-Server/blob/master/controllers/feed.js#L10)
+- [UPDATES](https://github.com/krymarie/GraphQL-API-Node-Server/blob/master/controllers/feed.js#L95)
+- [DELETES](https://github.com/krymarie/GraphQL-API-Node-Server/blob/master/controllers/feed.js#L143)
 
 ### App properly connects client and server using HTTP/HTTPS
 
-- [Front-end connected via HTTP/HTTPS]()
+- [Front-end connected via HTTP/HTTPS](https://github.com/krymarie/Final-FullStack-FrontEnd/blob/master/src/App.js#L65)
 
 ### Detailed ReadMe provided which explains install and run instructions.
 
@@ -67,10 +67,8 @@ npm start
 
 ### App structured, documented, and deployed without errors.
 
-- All three branches are documented and will deploy without any errors
+- All three branches are documented and deploy without any deployment errors
 
-  [RESTful API README](https://github.com/krymarie/Final-FullStack-API/blob/master/README.md)
-
-  [GraphQL API README](https://github.com/krymarie/GraphQL-API-Node-Server/blob/master/README.md)
-
-  [Front-end README](https://github.com/krymarie/Final-FullStack-FrontEnd/blob/master/README.md)
+- [RESTful API README](https://github.com/krymarie/Final-FullStack-API/blob/master/README.md)
+- [GraphQL API README](https://github.com/krymarie/GraphQL-API-Node-Server/blob/master/README.md)
+- [Front-end README](https://github.com/krymarie/Final-FullStack-FrontEnd/blob/master/README.md)
