@@ -28,6 +28,8 @@ npm start
 
 ### Front-end developed and function
 
+<img src="https://rawgit.com/gorangajic/react-icons/master/react-icons.svg" width="50" alt="React Icons">
+
 - Front end was developed using react and is responsive and has multiple nave items that populate data conditionally. run `npm install` and `npm start` after deploying other dependancies above.
 
 ### NPM scripts and Node used to create and manage back-end
@@ -68,6 +70,7 @@ npm start
 ### App structured, documented, and deployed without errors.
 
 - All three branches are documented and will deploy without any errors
+
   [RESTful API README](https://github.com/krymarie/Final-FullStack-API/blob/master/README.md)
 
   [GraphQL API README](https://github.com/krymarie/GraphQL-API-Node-Server/blob/master/README.md)
