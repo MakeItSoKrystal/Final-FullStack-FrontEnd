@@ -1,0 +1,24 @@
+.feed__control {
+  text-align: center;
+}
+
+.feed__control h2 {
+  text-align: left;
+  padding-left: 150px;
+  width: 90%;
+  margin: auto;
+  color: slategray;
+  font-size: 1rem;
+  color: #00929b;
+}
+
+.new-post__preview-image {
+  width: 15rem;
+  height: 7rem;
+}
+
+@media (min-width: 768px) {
+  .feed__status {
+    width: 40rem;
+  }
+}

@@ -33,7 +33,7 @@ const POST_FORM = {
   },
 };
 
-class FeedEdit extends Component {
+class NewClientEdit extends Component {
   state = {
     postForm: POST_FORM,
     formIsValid: false,
@@ -148,7 +148,7 @@ class FeedEdit extends Component {
       <Fragment>
         <Backdrop onClick={this.cancelPostChangeHandler} />
         <Modal
-          title={this.state.postForm["title"].value}
+          title="Client Details"
           acceptEnabled={this.state.formIsValid}
           onCancelModal={this.cancelPostChangeHandler}
           onAcceptModal={this.acceptPostChangeHandler}
@@ -205,4 +205,4 @@ class FeedEdit extends Component {
   }
 }
 
-export default FeedEdit;
+export default NewClientEdit;

@@ -11,6 +11,7 @@ import FeedPage from "./pages/Feed/Feed";
 import SingleClientPage from "./pages/Feed/SingleClient/SingleClient";
 import Pipeline from "./pages/Feed/Pipeline/Pipeline";
 import PhoneBook from "./pages/Feed/PhoneBook/PhoneBook";
+import AddClient from "./pages/Feed/AddClient/AddClient";
 // import LoginPage from './pages/Auth/Login';
 // import SignupPage from './pages/Auth/Signup';
 import "./App.css";
@@ -174,6 +175,16 @@ class App extends Component {
             exact
             render={(props) => (
               <FeedPage userId={this.state.userId} token={this.state.token} />
+            )}
+          />
+          <Route
+            path="/add-client"
+            render={(props) => (
+              <AddClient
+                {...props}
+                userId={this.state.userId}
+                token={this.state.token}
+              />
             )}
           />
           <Route

@@ -1,12 +1,14 @@
 import React, { Component, Fragment } from "react";
 
-import Post from "../../components/Feed/Post/Post";
-import FeedEdit from "../../components/Feed/FeedEdit/FeedEdit";
-import Paginator from "../../components/Paginator/Paginator";
-import Loader from "../../components/Loader/Loader";
-import "./Feed.css";
+import Post from "../../../components/Feed/Post/Post";
+import Button from "../../../components/Button/Button";
+import NewClientEdit from "../../../components/Feed/NewClientEdit/NewClientEdit";
+import Paginator from "../../../components/Paginator/Paginator";
+import Loader from "../../../components/Loader/Loader";
+import ErrorHandler from "../../../components/ErrorHandler/ErrorHandler";
+import "./AddClient.css";
 
-class Feed extends Component {
+class AddClient extends Component {
   state = {
     isEditing: false,
     posts: [],
@@ -46,7 +48,7 @@ class Feed extends Component {
       page--;
       this.setState({ postPage: page });
     }
-    fetch("http://localhost:8080/feed/posts?page=" + page)
+    fetch("http://localhost:8080/addClient/posts?page=" + page)
       .then((res) => {
         if (res.status !== 200) {
           throw new Error("Failed to fetch posts.");
@@ -183,14 +185,19 @@ class Feed extends Component {
   render() {
     return (
       <Fragment>
-        {/* <ErrorHandler error={this.state.error} onHandle={this.errorHandler} /> */}
-        <FeedEdit
+        <ErrorHandler error={this.state.error} onHandle={this.errorHandler} />
+        <NewClientEdit
           editing={this.state.isEditing}
           selectedPost={this.state.editPost}
           loading={this.state.editLoading}
           onCancelEdit={this.cancelEditHandler}
           onFinishEdit={this.finishEditHandler}
         />
+        <section className="feed__control">
+          <Button mode="raised" design="accent" onClick={this.newPostHandler}>
+            Add Client
+          </Button>
+        </section>
         <section className="feed">
           {this.state.postsLoading && (
             <div style={{ textAlign: "center", marginTop: "2rem" }}>
@@ -229,4 +236,4 @@ class Feed extends Component {
   }
 }
 
-export default Feed;
+export default AddClient;
