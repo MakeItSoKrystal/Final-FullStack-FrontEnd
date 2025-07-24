@@ -18,14 +18,14 @@ npm install
 npm start
 ```
 
-# Final Project Documentation
+# Documentation
 
 ### Conditional logic and array methods render large lists
 
 - [AllClients mapped into individual clients for seeding](https://github.com/krymarie/GraphQL-API-Node-Server/blob/master/prisma/seed.js#L11)
 - [For loop of allClients seeds each client into the DB](https://github.com/krymarie/GraphQL-API-Node-Server/blob/master/prisma/seed.js#L26)
 
-### Front-end developed and function
+### Front-end
 
 - Front-end was developed using <img src="https://rawgit.com/gorangajic/react-icons/master/react-icons.svg" width="15" alt="React Icon"> react, it responsive and has multiple nave items that populate data conditionally. Run `npm install` and `npm start` after deploying other dependencies to see functionality.
 
@@ -34,35 +34,27 @@ npm start
 - [npm scrips here used to generate and manage API and DB](https://github.com/krymarie/GraphQL-API-Node-Server/blob/master/package.json#L11)
 - [nodemon script here used to serve up RESTful API](https://github.com/krymarie/Final-FullStack-API/blob/master/package.json#L8)
 
-### Properly used Git with 4 days of commits per week
-
-- [33 days of commits between February 19th thru April 27th](https://github.com/krymarie)
-
-### Seed script populates datastore properly
+### Seed script populates datastore
 
 - [Follow instructions on <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvM8_0u5jqs7UY57Q-QgKtr6DCwIpXBLg1OvH2TFdghpyYqhdH&s" width="15" alt="GraphQL Icon"> GraphQL API and it will seed 25 clients into the <img src="https://cdn3.iconfinder.com/data/icons/social-media-2169/24/social_media_social_media_logo_docker-512.png" width="20" alt="Docker Icon"> Docker container. You will see mutations and CRUD operation in the GraphQL Playground, and you will see all 25 clients successfully added in the <img src="https://seeklogo.com/images/P/prisma-logo-3805665B69-seeklogo.com.png" width="10" alt="Prisma Icon"> Prisma Studio](https://github.com/krymarie/GraphQL-API-Node-Server)
 
-### RESTful server properly CREATES, READS, UPDATES, and DELETES
+### RESTful server CREATES, READS, UPDATES, and DELETES
 
 - [CREATE](https://github.com/krymarie/Final-FullStack-API/blob/master/controllers/feed.js#L19)
 - [READ](https://github.com/krymarie/Final-FullStack-API/blob/master/controllers/feed.js#L1)
 - [UPDATE](https://github.com/krymarie/Final-FullStack-API/blob/master/controllers/feed.js#L39)
 - [DELETE](https://github.com/krymarie/Final-FullStack-API/blob/master/controllers/feed.js#L81)
 
-### GraphQL server properly CREATES, READS, UPDATES, and DELETES
+### GraphQL server CREATES, READS, UPDATES, and DELETES
 
 - [CREATE](https://github.com/krymarie/GraphQL-API-Node-Server/blob/master/controllers/feed.js#L34)
 - [READ](https://github.com/krymarie/GraphQL-API-Node-Server/blob/master/controllers/feed.js#L10)
 - [UPDATE](https://github.com/krymarie/GraphQL-API-Node-Server/blob/master/controllers/feed.js#L95)
 - [DELETE](https://github.com/krymarie/GraphQL-API-Node-Server/blob/master/controllers/feed.js#L143)
 
-### App properly connects client and server using HTTP/HTTPS
+### App connects client and server using HTTP/HTTPS
 
 - [Front-end connected via HTTP/HTTPS](https://github.com/krymarie/Final-FullStack-FrontEnd/blob/master/src/App.js#L65)
-
-### Detailed ReadMe provided which explains install and run instructions.
-
-- You're looking at it :wink:
 
 ### App structured, documented, and deployed without errors.
 
